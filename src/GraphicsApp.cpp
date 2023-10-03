@@ -100,7 +100,7 @@ void GraphicsApp::VertexSpecification() {
         -0.5f,  0.5f,  0.5f,                
     }; */
 
-    Object bunny("./src/ObjFiles/ver1.obj");
+    Object bunny("./ModelMaker/model.obj");
 
     const std::vector<GLfloat> vertexData(bunny.vertices());
 
