@@ -100,9 +100,6 @@ def writeObjFile(vertices, normal, faces):
 def main():
     filename = '../imageData/model2019_fullHead.h5'
     mean_shape, mean_shape_pca, mean_texture, mean_texture_pca, cells = load_data(filename)
-    print(mean_shape.shape)
-    print(cells.shape)
-    print(cells[0:3, 0:2])
 
     if(check_winding_order(np.array([mean_shape[cells[0, 0]*3], mean_shape[cells[0, 0]*3 + 1], mean_shape[cells[0, 0]*3 + 2]]),
                         np.array([mean_shape[cells[1, 0]*3], mean_shape[cells[1, 0]*3 + 1], mean_shape[cells[1, 0]*3 + 2]]),
